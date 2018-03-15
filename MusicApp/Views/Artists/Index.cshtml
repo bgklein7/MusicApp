@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MusicApp.Models.Artist>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="container-fluid">
+
+
+@foreach (var item in Model) {
+    <div class="row">
+        <div id="artistname" class="col-md-3">
+            @Html.DisplayFor(modelItem => item.ArtistName)
+        </div>
+        <div class="col-md-6">
+            <img id="artistphoto" src="@Html.DisplayFor(modelItem => item.ArtistPhoto)" />
+        </div>
+        <div class="col-md-3">
+            @Html.ActionLink("Edit", "Edit", new { id=item.ArtistID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ArtistID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ArtistID })
+        </div>
+    </div>
+    <hr />
+}
+
+</div>

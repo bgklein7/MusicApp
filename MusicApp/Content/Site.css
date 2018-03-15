@@ -1,0 +1,98 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: black!important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.navbar-inverse {
+    background-image: url('images/rsz_1rsz_1drumstick.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar-nav a{
+    color: black!important;
+}
+.navbar-inverse .navbar-brand {
+    color: black!important;
+}
+
+/*Album Page Styling*/
+#indexcol h2{
+    margin-top: 0;
+}
+#createcol{
+    text-align: right;
+}
+#flipperone {
+    position: relative;
+    max-height: 200px;
+    max-width: 200px;
+    margin: 5px;
+}
+
+    #flipperone img {
+        position: absolute;
+        left: 0;
+
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+    }
+
+        #flipperone img.top:hover {
+            opacity: 0;
+        }
+
+        #albumBackContainer{
+            height: 200px;
+            width: 200px;
+        }
+        .bottom{
+            height: 200px;
+            width: 200px;
+            color: lightgrey;
+
+        }
+
+.top {
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    z-index: 2;
+}
+
+/*Artist Page Styling*/
+#artistphoto{
+    max-height: 320px;
+    max-width: 400px;
+}
+#artistname{
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-size: 24px;
+}
+
+/*Album details Styling*/
+#albumdetails{
+    color: white!important;
+}
